@@ -1,0 +1,21 @@
+@media screen and (max-width: 540px) {
+  .intro-section {
+    flex-direction: column-reverse;
+  }
+  .intro-section div:last-child {
+    width: 100%;
+  }
+  .intro-section div:last-child div {
+    background-color: aqua;
+  }
+  .intro-section div:last-child div .small-img {
+    display: none;
+  }
+  .intro-section div:last-child div .big-img {
+    border-radius: 0;
+    width: 100%;
+  }
+  .intro-section div:last-child .row-reverse {
+    display: none;
+  }
+}/*# sourceMappingURL=mobile.css.map */

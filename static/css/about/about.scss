@@ -1,0 +1,358 @@
+// Add your scss here
+@import '../variables/variables';
+
+// Information header
+header{
+    
+    background-color: $red-color;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    padding: 8px 10%;
+    padding-left: 10%;
+    gap: 6px;
+
+}
+
+// Navigation bar 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $padding;
+
+    div:first-child{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        li{
+            a{
+                color: $cPrimary;
+
+                
+            }
+        }
+     
+        li:nth-child(2){
+            a{
+                text-decoration:underline ;
+            }
+        }
+        
+    }
+    div:last-child{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        i{
+            color: $cPrimary;
+        }
+        button{
+            background-color: $cPrimary;
+
+        }
+    }
+}
+
+.intro-section{
+    padding: $padding;
+    gap: 40px;
+    justify-content: space-between;
+    
+    
+    div:first-child{
+        gap: $default-gap;
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
+        h1{
+            color: $cPrimary;
+            
+        }
+        p{
+            font-weight: bolder;
+            width: 90%;
+        }
+    }
+    div:last-child{
+        display: flex;
+        flex-direction: column;
+        
+        // background-color: aqua;
+        width: 50%;
+        gap: $default-gap;
+
+        div{
+            display: flex;
+            flex-direction: row;
+            gap: $default-gap;
+            // background-color: rebeccapurple;
+            width: 100%;
+            justify-content: end;
+            .small-img{
+                max-width: 30%;
+                border-radius: calc($border-radius/2);
+            }
+            .big-img{
+                max-width: 50%;
+                border-radius: $border-radius;
+            }
+        }
+        .row-reverse{
+            flex-direction: row-reverse;
+            
+        }
+    }
+}
+
+.history{
+    padding: $padding;
+    background: linear-gradient(180deg, rgba(207, 228, 242, 0) -46.33%, #CFE4F2 58.34%);
+
+    h1{
+        color: $cPrimary;
+    }
+
+    div{
+        
+        p{
+            width: 45%;
+        }
+    }
+}
+
+.company{
+    align-items: start;
+    justify-content: center;
+    gap: calc($default-gap*4);
+    background: linear-gradient(180deg, #D0E4F3 48.75%, rgba(208, 228, 243, 0) 100%);
+    padding: 10% 10%;
+    
+    .company-img{
+        width: 50%;
+        text-align: end;
+        img{
+            width: 350px;
+            height: 400px;
+            border-radius: calc($border-radius/2);
+        }
+    }
+    div:last-child{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-right: 3%;
+        div{
+            width: 100%;
+            h2{
+                font-weight: bold;
+            }
+            p{
+                font-size: 15px;
+                width: 80%;
+            }
+            .values{
+                width: 100%;
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: $default-gap;
+
+                div{
+                    display: flex;
+                    width: fit-content;
+                    border-radius: $border-radius;
+                    padding: 5px 10px;
+                    background-color: white;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.team{
+    padding: $padding;
+    display: flex;
+    flex-direction: column;
+    gap: $default-gap;
+    justify-content: center;
+    align-self: center;
+
+    h1{
+        font-weight: bold;
+        // background-color: red;
+        margin-left: 10%;
+    }
+    .team-staff{
+        display: flex;
+        flex-wrap: wrap;
+        gap: $default-gap*2;
+        justify-content: center;
+        // background-color: aqua;
+
+        .team-member{
+            height: 35%;
+            width: 25%;
+            border-radius: calc($border-radius/2);
+            overflow: hidden;
+            background-color: $cSecondaryFade;
+
+            img{
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+            div{
+                margin: 0;
+                padding: 10px 20px;
+                font-size: 17px;
+                background-color: $cSecondaryFade;
+
+                p{
+                    color: $cPrimary;
+                }
+            }
+        }
+    }
+
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: calc($default-gap*4);
+    padding: $padding;
+    .get-in-touch{
+        flex-direction: column;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+
+        p{
+            width: 60%;
+        }
+    }
+    .address{
+        .address-card{
+            display: flex;
+            flex-direction: column;
+            gap: $default-gap;
+            background-color: $cSecondaryFade;
+            padding: 12px 20px;
+            max-width: 20%;
+            border-radius: calc($border-radius/2);
+            .row{
+                justify-content: flex-start;
+                gap: $default-gap;
+                i{
+                    color: $cPrimary;
+                    font-size: 25px;
+                }
+                p{
+                    font-weight: 600;
+                }
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    .form{
+        display: flex;
+        gap: $default-gap*6;
+        
+        div:first-child{
+            display: flex;
+            flex-direction: column;
+            gap: $default-gap;
+            width: 50%;
+            
+            p{
+                
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: $default-gap;
+
+                div{
+                    display: flex;
+                    gap: $default-gap;
+                }
+                input, textarea{
+                    border: 1px solid $cSecondary;
+                    padding: 10px 10px;
+                    border-radius: calc($border-radius/5);
+                    outline: none;
+                    width: 100%;
+                }
+                button{
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    align-items: end;
+    padding: 3.8% 10%;
+    background-color: $cPrimary;
+    font-size: 16px;
+    color: rgb(239, 249, 253);
+
+    p,a{
+        font-size: 14px;
+    }
+
+  
+        div:first-child{
+            width: fit-content;
+            flex: 1 1 0px;
+            
+        }
+        div:nth-child(2){
+            width: fit-content;
+            flex: 1 1 0px;
+            
+            ul{
+                display: flex;
+                gap: $default-gap;
+                a{
+                    color: white;
+                }
+            }
+        }
+        div:last-child{
+            display: flex;
+            flex: 1 1 0px;
+            flex-direction: column;
+            width: fit-content;
+            align-items: end;
+    
+            div{
+                display: flex;
+                gap: calc($default-gap*1.2);
+            }
+        }
+
+    
+}
+

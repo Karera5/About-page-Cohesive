@@ -1,0 +1,28 @@
+// Mobile and Tablet version of about the page
+
+@media screen and (max-width: 540px) {
+    .intro-section{
+
+        flex-direction: column-reverse;
+
+        
+        div:last-child{
+            width: 100%;
+            div{
+                background-color: aqua;
+                .small-img{
+                    display: none;
+                    
+                }
+                .big-img{
+                    border-radius: 0;
+                    width: 100%;
+                }
+            }
+            .row-reverse{
+                display: none;
+            }
+        }
+            
+    }
+}

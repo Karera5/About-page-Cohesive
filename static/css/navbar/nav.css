@@ -1,0 +1,118 @@
+header .logo {
+  pointer-events: none;
+}
+header .topnav {
+  width: 100vw;
+  background-color: #B52C2C;
+  color: #F5FAFC;
+}
+header .topnav .container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 10px;
+}
+header .topnav .container h4 {
+  font-size: 14px;
+}
+header .topnav .container img {
+  max-width: 18px;
+  max-height: 18px;
+}
+header nav {
+  padding: 24px 24px;
+}
+header nav .container .col-1 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header nav .container .col-1 .links {
+  display: flex;
+  gap: 12px;
+}
+header nav .container .col-1 .links li a {
+  color: #0F76BC;
+}
+header nav .container .col-2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+header nav .container .col-2 .social-media {
+  color: #0F76BC;
+  display: flex;
+  gap: 12px;
+}
+header nav .container .col-2 a button {
+  background-color: #0F76BC;
+  color: #F5FAFC;
+  cursor: pointer;
+}
+header nav .container .col-2 a button:hover {
+  background: transparent;
+  color: #0F76BC;
+  border: 1px solid #0F76BC;
+}
+header nav .container .col-3 {
+  display: none;
+}
+header .fixed-nav {
+  position: fixed;
+  background-color: rgba(15, 119, 188, 0.9529411765);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+header .fixed-nav .container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+header .fixed-nav .container .col-1 .logo {
+  display: none;
+}
+header .fixed-nav .container .col-1 .links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+header .fixed-nav .container .col-1 .links li a {
+  color: #F5FAFC;
+  font-weight: bold;
+}
+header .fixed-nav .container .col-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+header .fixed-nav .container .col-2 .social-media {
+  color: #F5FAFC;
+}
+header .fixed-nav .container .col-2 a button {
+  background-color: #F5FAFC;
+  color: #0F76BC;
+}
+header .fixed-nav .container .col-2 a button:hover {
+  color: #F5FAFC;
+  border: 1px solid #F5FAFC;
+}
+header .fixed-nav .container .col-3 {
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+}
+header .fixed-nav .container .col-3 .nav-toggle {
+  display: none;
+}
+header .fixed-nav .container .col-3 .close-btn {
+  display: block;
+  color: #F5FAFC;
+  font-size: 30px;
+  cursor: pointer;
+}/*# sourceMappingURL=nav.css.map */

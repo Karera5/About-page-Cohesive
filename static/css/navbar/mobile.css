@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+  header nav .container .col-1 .links {
+    display: none;
+  }
+  header nav .container .col-2 {
+    display: none;
+  }
+  header nav .container .col-3 {
+    display: block;
+  }
+  header nav .container .col-3 .nav-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    color: #0F76BC;
+  }
+  header nav .container .col-3 .close-btn {
+    display: none;
+  }
+}/*# sourceMappingURL=mobile.css.map */

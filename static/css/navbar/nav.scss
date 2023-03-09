@@ -1,0 +1,275 @@
+// use this styles for the navbar and header
+// variables
+@import '../variables/variables';
+
+header {
+    .logo {
+        pointer-events: none;
+    }
+
+    .topnav {
+        width: 100vw;
+        background-color: $red-color;
+        color: $cSecondaryFade;
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 10px;
+
+            h4 {
+                font-size: 14px;
+            }
+
+            img {
+                max-width: 18px;
+                max-height: 18px;
+            }
+        }
+    }
+
+    nav {
+        padding: 24px 24px;
+
+        .container {
+            .col-1 {
+                display: flex;
+                align-items: center;
+                gap: calc($default-gap * 2);
+
+                .links {
+                    display: flex;
+                    gap: $default-gap;
+
+                    li {
+                        a {
+                            color: $cPrimary;
+                        }
+                    }
+                }
+            }
+
+            .col-2 {
+                display: flex;
+                align-items: center;
+                gap: $default-gap;
+
+                .social-media {
+                    color: $cPrimary;
+                    display: flex;
+                    gap: $default-gap;
+                }
+
+                a {
+                    button {
+                        background-color: $cPrimary;
+                        color: $cSecondaryFade;
+                        cursor: pointer;
+
+                        &:hover {
+                            background: transparent;
+                            color: $cPrimary;
+                            border: 1px solid $cPrimary;
+                        }
+                    }
+                }
+            }
+
+            .col-3 {
+                display: none;
+            }
+        }
+    }
+
+    .fixed-nav {
+        position: fixed;
+        background-color: #0f77bcf3;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: $default-gap;
+
+            .col-1 {
+                .logo {
+                    display: none;
+                }
+
+                .links {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    margin-top: 50px;
+
+                    li {
+                        a {
+                            color: $cSecondaryFade;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            .col-2 {
+                display: flex;
+                flex-direction: column;
+                gap: $default-gap;
+
+                .social-media {
+                    color: $cSecondaryFade;
+                }
+
+                a {
+                    button {
+                        background-color: $cSecondaryFade;
+                        color: $cPrimary;
+
+                        &:hover {
+                            color: $cSecondaryFade;
+                            border: 1px solid $cSecondaryFade;
+                        }
+                    }
+                }
+            }
+
+            .col-3 {
+                position: absolute;
+                right: 0;
+                padding-right: 20px;
+
+                .nav-toggle {
+                    display: none;
+                }
+
+                .close-btn {
+                    display: block;
+                    color: $cSecondaryFade;
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+// nav {
+//     width: 100%;
+//     height: 80px;
+
+//     .nav-center {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         padding: 24px 48px;
+
+
+//         .nav-header {
+//             display: flex;
+//             align-items: center;
+//             gap: $default-gap;
+//         }
+
+//         .links {
+//             display: flex;
+//             align-items: center;
+//             gap: $default-gap;
+
+//             li {
+//                 a {
+//                     color: $cSecondary;
+//                 }
+//             }
+//         }
+
+//         .row {
+//             gap: calc($default-gap * 2);
+
+//             .col {
+//                 .social-media-icons {
+//                     display: flex;
+//                     gap: $default-gap;
+
+//                     a {
+//                         color: $cPrimary;
+//                     }
+//                 }
+
+//                 button {
+//                     background-color: $cPrimary;
+//                     color: $cSecondaryFade;
+//                     cursor: pointer;
+
+//                     &:hover {
+//                         background: transparent;
+//                         color: $cPrimary;
+//                         border: 1px solid $cPrimary;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     .nav-toggle, .close-btn {
+//         text-align: right;
+//         font-size: 24px;
+//         display: none;
+//     }
+// }
+
+// .fixed-nav {
+//     position: fixed;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     background-color: #0f77bcf1;
+//     color: $cSecondaryFade;
+//     z-index: 10;
+
+//     .nav-center {
+//         .nav-header {
+//             .logo {
+//                 display: none;
+//             }
+
+//             .links {
+//                 display: flex;
+//                 flex-direction: column;
+//             }
+//         }
+//         .row {
+//             display: none;
+//             flex-direction: column;
+//         }
+//     }
+
+//     .nav-toggle {
+//         display: none;
+//     }
+
+//     .close-btn {
+//         display: block;
+//         text-align: right;
+//     }
+// }

@@ -1,0 +1,304 @@
+header {
+  background-color: #B52C2C;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  padding: 8px 10%;
+  padding-left: 10%;
+  gap: 6px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 10%;
+}
+nav div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav ul li a {
+  color: #0F76BC;
+}
+nav ul li:nth-child(2) a {
+  text-decoration: underline;
+}
+nav div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav div:last-child i {
+  color: #0F76BC;
+}
+nav div:last-child button {
+  background-color: #0F76BC;
+}
+
+.intro-section {
+  padding: 2% 10%;
+  gap: 40px;
+  justify-content: space-between;
+}
+.intro-section div:first-child {
+  gap: 12px;
+  flex-direction: column;
+  align-items: start;
+  width: 50%;
+}
+.intro-section div:first-child h1 {
+  color: #0F76BC;
+}
+.intro-section div:first-child p {
+  font-weight: bolder;
+  width: 90%;
+}
+.intro-section div:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 12px;
+}
+.intro-section div:last-child div {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  width: 100%;
+  justify-content: end;
+}
+.intro-section div:last-child div .small-img {
+  max-width: 30%;
+  border-radius: 25px;
+}
+.intro-section div:last-child div .big-img {
+  max-width: 50%;
+  border-radius: 50px;
+}
+.intro-section div:last-child .row-reverse {
+  flex-direction: row-reverse;
+}
+
+.history {
+  padding: 2% 10%;
+  background: linear-gradient(180deg, rgba(207, 228, 242, 0) -46.33%, #CFE4F2 58.34%);
+}
+.history h1 {
+  color: #0F76BC;
+}
+.history div p {
+  width: 45%;
+}
+
+.company {
+  align-items: start;
+  justify-content: center;
+  gap: 48px;
+  background: linear-gradient(180deg, #D0E4F3 48.75%, rgba(208, 228, 243, 0) 100%);
+  padding: 10% 10%;
+}
+.company .company-img {
+  width: 50%;
+  text-align: end;
+}
+.company .company-img img {
+  width: 350px;
+  height: 400px;
+  border-radius: 25px;
+}
+.company div:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 3%;
+}
+.company div:last-child div {
+  width: 100%;
+}
+.company div:last-child div h2 {
+  font-weight: bold;
+}
+.company div:last-child div p {
+  font-size: 15px;
+  width: 80%;
+}
+.company div:last-child div .values {
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 12px;
+}
+.company div:last-child div .values div {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50px;
+  padding: 5px 10px;
+  background-color: white;
+}
+.company div:last-child div .values div img {
+  width: 40px;
+  height: 40px;
+}
+.company div:last-child div .values div p {
+  font-size: 14px;
+}
+
+.team {
+  padding: 2% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-self: center;
+}
+.team h1 {
+  font-weight: bold;
+  margin-left: 10%;
+}
+.team .team-staff {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.team .team-staff .team-member {
+  height: 35%;
+  width: 25%;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #F5FAFC;
+}
+.team .team-staff .team-member img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.team .team-staff .team-member div {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 17px;
+  background-color: #F5FAFC;
+}
+.team .team-staff .team-member div p {
+  color: #0F76BC;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 2% 10%;
+}
+.contact .get-in-touch {
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+.contact .get-in-touch p {
+  width: 60%;
+}
+.contact .address .address-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #F5FAFC;
+  padding: 12px 20px;
+  max-width: 20%;
+  border-radius: 25px;
+}
+.contact .address .address-card .row {
+  justify-content: flex-start;
+  gap: 12px;
+}
+.contact .address .address-card .row i {
+  color: #0F76BC;
+  font-size: 25px;
+}
+.contact .address .address-card .row p {
+  font-weight: 600;
+}
+.contact .address .address-card p {
+  font-size: 15px;
+}
+.contact .form {
+  display: flex;
+  gap: 72px;
+}
+.contact .form div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 50%;
+}
+.contact .form div:first-child form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact .form div:first-child form div {
+  display: flex;
+  gap: 12px;
+}
+.contact .form div:first-child form input, .contact .form div:first-child form textarea {
+  border: 1px solid #07AEEF;
+  padding: 10px 10px;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+}
+.contact .form div:first-child form button {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  align-items: end;
+  padding: 3.8% 10%;
+  background-color: #0F76BC;
+  font-size: 16px;
+  color: rgb(239, 249, 253);
+}
+footer p, footer a {
+  font-size: 14px;
+}
+footer div:first-child {
+  width: -moz-fit-content;
+  width: fit-content;
+  flex: 1 1 0px;
+}
+footer div:nth-child(2) {
+  width: -moz-fit-content;
+  width: fit-content;
+  flex: 1 1 0px;
+}
+footer div:nth-child(2) ul {
+  display: flex;
+  gap: 12px;
+}
+footer div:nth-child(2) ul a {
+  color: white;
+}
+footer div:last-child {
+  display: flex;
+  flex: 1 1 0px;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: end;
+}
+footer div:last-child div {
+  display: flex;
+  gap: 14.4px;
+}/*# sourceMappingURL=about.css.map */

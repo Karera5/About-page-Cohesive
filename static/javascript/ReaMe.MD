@@ -1,0 +1,1 @@
+1. When creating a js, organize them in forlders according to which page they are required to be loaded from. example /javascript/index/index.js

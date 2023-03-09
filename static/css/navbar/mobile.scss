@@ -1,0 +1,36 @@
+// mobile styles
+
+//variables
+@import '../variables/variables';
+
+@media screen and (max-width: 768px) {
+    header {
+        nav {
+            .container {
+                .col-1 {
+                    .links {
+                        display: none;
+                    }
+                }
+
+                .col-2 {
+                    display: none;
+                }
+
+                .col-3 {
+                    display: block;
+
+                    .nav-toggle {
+                        font-size: 30px;
+                        cursor: pointer;
+                        color: $cPrimary;
+                    }
+
+                    .close-btn {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
